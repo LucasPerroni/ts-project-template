@@ -3,7 +3,7 @@
 
 // **If you already have a database structure: npx prisma db pull
 // Create new migration: npx prisma migrate dev
-// Access prisma strudio: npx prisma studio
+// Access prisma studio: npx prisma studio
 
 generator client {
   provider = "prisma-client-js"
