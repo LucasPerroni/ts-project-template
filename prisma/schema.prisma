@@ -3,6 +3,7 @@
 
 // **If you already have a database structure: npx prisma db pull
 // Create new migration: npx prisma migrate dev
+// Generate models: npx prisma generate
 // Access prisma studio: npx prisma studio
 
 generator client {
