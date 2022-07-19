@@ -9,7 +9,7 @@
     "start": "node dist/src/server.js",
     "dev": "nodemon src/server.ts",
     "ts": "ts-node src/server.ts",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -i"
   },
   "keywords": [],
   "author": "",
