@@ -9,7 +9,10 @@
     "start": "node dist/src/server.js",
     "dev": "nodemon src/server.ts",
     "ts": "ts-node src/server.ts",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -i"
+    "test": "dotenv -e .env.test prisma migrate dev && cross-env NODE_OPTIONS=--experimental-vm-modules dotenv -e .env.test jest -i"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +22,7 @@
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
+    "dotenv-cli": "^6.0.0",
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
     "joi": "^17.6.0"
